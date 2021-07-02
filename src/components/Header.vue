@@ -14,7 +14,7 @@
       </v-btn>
       <v-btn
         text
-        :to="{name:'Courses'}"
+        :to="{name:'CourseList'}"
       >
         Courses
       </v-btn>
