@@ -1,4 +1,4 @@
-# course_list
+# todo
 
 ## Project setup
 ```
