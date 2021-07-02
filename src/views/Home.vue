@@ -1,30 +1,6 @@
 <template>
   <div class="home">
     <h1>Home page</h1>
-    <v-text-field
-      label="Todo"
-      outlined
-      v-model="newTodo"
-    ></v-text-field>
-    <v-btn @click="submit">
-      Add
-    </v-btn>
-    <v-snackbar
-      v-model="snackbar"
-      :timeout="timeout"
-    >
-      {{ text }}
-      <template v-slot:action="{ attrs }">
-        <v-btn
-          color="blue"
-          text
-          v-bind="attrs"
-          @click="snackbar = false"
-        >
-          Close
-        </v-btn>
-      </template>
-    </v-snackbar>
   </div>
 </template>
 

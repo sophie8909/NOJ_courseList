@@ -24,7 +24,7 @@
 
 <script>
 export default {
-  name: 'TryTable',
+  name: 'Courses',
   data: () => ({
     isLoading: false,
     item_key: 'name',
