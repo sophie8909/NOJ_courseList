@@ -1,7 +1,24 @@
 <template>
-  <div id="app">
-    <CoursesTable class="mt-5 m-auto w-1/2"></CoursesTable>
-    <CreateCourse class="mt-5 m-auto w-1/2"></CreateCourse>
+  <div id="app" class="flex">
+    <div class="w-1/4">
+    </div>
+    <CoursesTable
+      class="mt-5 m-auto w-1/2"
+      v-if="isCreate === false"
+    >
+    </CoursesTable>
+    <CreateCourse
+      class="mt-5 m-auto w-1/2"
+      v-if="isCreate === true">
+    </CreateCourse>
+    <div class="w-1/4">
+      <v-btn
+        class="mt-10 mx-10"
+        @click="isCreate = !isCreate"
+      >
+        Create Course
+      </v-btn>
+    </div>
   </div>
 </template>
 
@@ -16,6 +33,7 @@ export default {
     CreateCourse,
   },
   data: () => ({
+    isCreate: false,
   }),
 };
 </script>
