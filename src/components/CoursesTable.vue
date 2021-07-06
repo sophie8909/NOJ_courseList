@@ -1,5 +1,5 @@
 <template>
-    <v-card class="w-auto mr-15 ml-15 mt-5">
+    <v-card>
       <v-data-table
         :headers="headers"
         :items="courses"
