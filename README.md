@@ -1,4 +1,4 @@
-# NOJ_
+# NOJ_courseList
 
 ## Project setup
 ```
