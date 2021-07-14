@@ -10,22 +10,23 @@
 </template>
 
 <script>
+const headers = [
+  {
+    text: 'Course',
+    align: 'start',
+    filterable: false,
+    value: 'name',
+    width: '40%',
+  },
+  { text: 'Term', value: 'term', width: '10%' },
+  { text: 'Teacher', value: 'teacher', width: '20%' },
+  { text: 'Enrolled as', value: 'role', width: '20%' },
+];
 export default {
   data: () => ({
-    headers: [
-      {
-        text: 'Course',
-        align: 'start',
-        filterable: false,
-        value: 'name',
-        width: '40%',
-      },
-      { text: 'Term', value: 'term', width: '10%' },
-      { text: 'Teacher', value: 'teacher', width: '20%' },
-      { text: 'Enrolled as', value: 'role', width: '20%' },
-    ],
     isLoading: false,
     item_key: 'name',
+    headers,
     courses: [
       {
         name: '程式設計（一）',
